@@ -128,7 +128,7 @@ hr{
 }
 
 hr.appear{
-    width: 20vw;
+    width: 15vw;
     animation: loadBorder 2s;
 
 }
