@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto:wght@700&display=swap');
+
+
+.jumbotron {
+    border:solid 1px black;
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+}
+
+.wrapper{
+    align-items:stretch;
+    width:100%;
+    display:flex;
+
+}
+
+
+#sidebar {
+    min-width:250px;
+    max-width:250px;
+    min-height:100vh;
+    background-color:#0b0b0b;
+    position:fixed;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color:white;
+    font-family:Muli;
+}
+
+.sidebar-header {
+    text-align: center;
+    padding:1em;
+}
+a, a:hover, a:focus {
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar ul li a:hover {
+    color: black;
+    background: #fff;
+}
+
+#skills {
+    background-color:#131313;
+}
+#edu {
+    background-color:#131313;
+}
+
+.content {
+    display: block;
+    padding-left:250px;
+    width: 100%;
+}
+
+.jumbotron p{
+    font-family:Lato;
+    font-size:1.4vw;
+    margin:15px;
+}
+.welcome {
+    text-align: center;
+}
+
+.content img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.full {
+    height:100vh;
+    min-height:100vh;
+    padding-top:20px;
+    text-align: center;
+    opacity:0;
+    transition: opacity 0.8s ease-in;
+}
+.full.appear {
+    opacity:1;
+}
+
+.full h5{
+    margin-left: 210px;
+    text-align: left;
+    font-family:'Roboto';font-size:1.2vw
+}
+
+
+.row {
+    display:flex;
+    margin-top: 4vw;
+
+}
+.project-item {
+    max-width: 25vw;
+    max-height:20vw;
+    box-shadow: 0px 0px 3px grey;
+}
+
+
+
+.col-sm {
+    margin-inline: 6vw;
+}
+
+
+.typewrite {
+    font-family:"Open Sans";
+}
+
+
+.carousel {
+    max-width: 50vw;
+    margin-top:2vw;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+hr{
+    width:0vw;
+}
+
+hr.appear{
+    width: 20vw;
+    animation: loadBorder 2s;
+
+}
+
+#part2 {
+    background-color:white;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.btn-learn a{
+    color:white;
+    background-color: black;
+    border:solid 2px black;
+    font-size:1.4vw;
+    padding:0.9vw;
+    font-family:Roboto;
+}
+
+.btn-learn a:hover {
+    transition-delay: 0.1s;
+    box-shadow: 1px 1px 2px black;
+    font-size:1.45vw;
+}
+
+.btn-learn {
+    height:10%;
+}
+.full h1{
+    margin-bottom: 1vw;
+    margin-top:3vw;
+    font-size: 3vw;
+    font-family: "Open Sans";
+
+}
+
+
+@keyframes loadBorder {
+    from {
+        width:0vw;
+    }
+    to{
+        width: 20vw;
+    }
+
+}
+
+
+@media screen and (min-width:768px) {
+    .jumbotron {
+        padding-top:5px;
+        padding-bottom: 5px;
+        max-width: 50vw;
+    }
+    #about {
+        margin-top: 4vw;
+    }
+    .typewrite {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    .column {
+        max-width: 25vw;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+        box-shadow:none;
+    }
+    .project-item {
+        max-height:35vw;
+        max-width: 35vw;
+    }
+
+
+
+    .content {
+        padding-left:0;
+    }
+    .typewrite {
+        margin-top: 10vw;
+        margin-bottom:10vw;
+    }
+
+    .jumbotron {
+        margin-inline: 15px;
+        padding-top:4px;
+        padding-bottom: 4px;
+
+        cursor: pointer;
+          -webkit-tap-highlight-color: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          z-index: 0;
+          transition: 1s;
+    }
+
+
+    .full h5{
+        font-size:medium;
+        margin-left:15px;
+    }
+
+    .content p {
+        font-size:4.5vw;
+    }
+       .btn-learn a{
+        font-size:4vw;
+           padding:3vw;
+    }
+       .btn-learn{
+           padding-top:5vw;
+       }
+       .btn-learn a:hover {
+            font-size:4.2vw;
+        }
+
+    .full h1{
+        margin-top:8vw;
+        margin-bottom: 5vw;
+        font-size: 7vw;
+    }
+
+    .carousel{
+        min-width: 80vw;
+    }
+}
+
