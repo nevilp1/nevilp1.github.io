@@ -15,7 +15,6 @@
 
 }
 
-
 #sidebar {
     min-width:250px;
     max-width:250px;
@@ -68,7 +67,7 @@ a, a:hover, a:focus {
     text-align: center;
 }
 
-.content img {
+.full img {
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -80,24 +79,38 @@ a, a:hover, a:focus {
     padding-top:20px;
     text-align: center;
     opacity:0;
-    transition: opacity 0.8s ease-in;
+    transition: opacity 0.5s ease-in;
 }
 .full.appear {
     opacity:1;
 }
 
-.full h5{
-    margin-left: 210px;
+#text-about{
+    margin-left: 250px;
     text-align: left;
     font-family:'Roboto';font-size:1.2vw
 }
 
+.text-skill{
+    margin-top:1.5vw;
+}
 
 .row {
-    display:flex;
-    margin-top: 4vw;
-
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    margin-top: 3vw;
 }
+
+#contact{
+    margin-top:150px;
+}
+
+#part3{
+    background-color: whitesmoke;
+}
+
 .project-item {
     max-width: 25vw;
     max-height:20vw;
@@ -106,10 +119,12 @@ a, a:hover, a:focus {
 
 
 
-.col-sm {
-    margin-inline: 6vw;
-}
+/*.col-sm {*/
+/*    margin-inline: 6vw;*/
 
+.col{
+    max-width: 20vw;
+}
 
 .typewrite {
     font-family:"Open Sans";
@@ -124,17 +139,17 @@ a, a:hover, a:focus {
 
 }
 hr{
-    width:0vw;
+    width:0%;
 }
 
 hr.appear{
-    width: 15vw;
+    width: 10%;
     animation: loadBorder 2s;
 
 }
 
 #part2 {
-    background-color:white;
+    background-color:whitesmoke;
 }
 html {
     scroll-behavior: smooth;
@@ -160,25 +175,79 @@ html {
 }
 .full h1{
     margin-bottom: 1vw;
-    margin-top:3vw;
+    margin-top:3.5vw;
     font-size: 3vw;
-    font-family: "Open Sans";
+    font-family: "Arial";
 
 }
 
+.tab-pane.active h4{
+    text-align: left;
+    margin-left: 20px;
+    font-family: Roboto;
+
+}
+
+.tab-pane.active h6{
+    font-family: Roboto;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.list-group a{
+    margin-bottom:2.5vw;
+    border:2px solid black;
+    font-size: 20px;
+    color:#0b0b0b;
+    background-color: whitesmoke;
+}
+
+.container-fluid{
+    display: flex;
+    max-width: 7vw;
+}
+
+
+.list-group .list-group-item-action.active{
+    margin-bottom:2.5vw;
+    background-color: #0b0b0b;
+    border-color: #0b0b0b;
+}
+
+ul{
+    font-family: "Open Sans";
+}
+
+
+.contact-item{
+    max-width: 3.3vw;
+    margin-bottom: 2vw;
+    margin-top:1vw;
+}
+
+#contact{
+    max-height:30vh;height:30vh;min-height: 30vh
+}
 
 @keyframes loadBorder {
     from {
         width:0vw;
     }
     to{
-        width: 15vw;
+        width:10%;
     }
 
 }
 
 
 @media screen and (min-width:768px) {
+    .img-fluid{
+        max-width: 40%;
+    }
+
+    .img-thumbnail{
+        max-width: 150px;
+    }
     .jumbotron {
         padding-top:5px;
         padding-bottom: 5px;
@@ -198,6 +267,11 @@ html {
 }
 
 @media (max-width: 768px) {
+    .full{
+        min-height: 85vh;
+        max-height: 85vh;
+    }
+
     #sidebar {
         margin-left: -250px;
         box-shadow:none;
@@ -207,7 +281,10 @@ html {
         max-width: 35vw;
     }
 
-
+    .list-group a{
+        font-size: 4vw;
+        width: 125%;
+    }
 
     .content {
         padding-left:0;
@@ -261,5 +338,37 @@ html {
     .carousel{
         min-width: 80vw;
     }
+
+    .col-7 h4{
+        font-size:medium;
+    }
+
+    .col-7 li{
+        font-size:3.4vw;
+    }
+  
+
+    .col h4{
+        font-size:3.2vw;
+    }
+
+    .col p{
+        font-size:2.7vw;
+    }
+
+    .contact-item{
+        max-width: 8vw;
+    }
+
+    .tab-pane h6{
+        font-size: 3.3vw;
+    }
+
+    #text-about{
+        font-size:4.5vw;
+        margin-left:15px;
+    }
+
+
 }
 
