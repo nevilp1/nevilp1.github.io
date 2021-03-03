@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto:wght@700&display=swap');
 
 
-.jumbotron {
+.anim {
     border:solid 1px black;
+}
+
+.jumbotron {
     margin-left:auto;
     margin-right: auto;
     display: block;
@@ -86,9 +89,9 @@ a, a:hover, a:focus {
 }
 
 #text-about{
-    margin-left: 250px;
+    margin-left: 15px;
     text-align: left;
-    font-family:'Roboto';font-size:1.2vw
+    font-family:'Roboto';font-size:1.3vw
 }
 
 .text-skill{
@@ -253,6 +256,10 @@ ul{
         padding-bottom: 5px;
         max-width: 50vw;
     }
+    .anim {
+         padding:20px;
+    }
+
     #about {
         margin-top: 4vw;
     }
@@ -293,6 +300,9 @@ ul{
         margin-top: 10vw;
         margin-bottom:10vw;
     }
+    .anim {
+        padding:10px;
+    }
 
     .jumbotron {
         margin-inline: 15px;
@@ -301,7 +311,7 @@ ul{
 
         cursor: pointer;
           -webkit-tap-highlight-color: transparent;
-          display: flex;
+          display: block;
           align-items: center;
           justify-content: center;
           position: relative;
@@ -323,7 +333,7 @@ ul{
            padding:3vw;
     }
        .btn-learn{
-           padding-top:5vw;
+           padding-top:1vw;
        }
        .btn-learn a:hover {
             font-size:4.2vw;
