@@ -268,8 +268,8 @@ ul{
 
 @media (max-width: 768px) {
     .full{
-        min-height: 85vh;
-        max-height: 85vh;
+        min-height: 95vh;
+        max-height: 95vh;
     }
 
     #sidebar {
