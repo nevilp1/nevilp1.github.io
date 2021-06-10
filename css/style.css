@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto:wght@700&display=swap');
 
 
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
 .anim {
     border:solid 1px black;
 }
